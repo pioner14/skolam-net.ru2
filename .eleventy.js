@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
       output: "docs"
     },
     // All HTML files will be processed by the Liquid template engine
-    htmlTemplateEngine: "liquid"
+    htmlTemplateEngine: "liquid",
+    pathPrefix: "/skolam-net.ru2/" // Add this line for GitHub Pages deployment
   };
 };
