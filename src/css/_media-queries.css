@@ -1,0 +1,150 @@
+/* ===== АДАПТИВНЫЙ ДИЗАЙН ===== */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto; /* Высота будет определяться содержимым */
+    padding-bottom: var(--spacing-xl);
+  }
+
+  .logo-section {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hamburger-menu {
+    display: block; /* Показываем кнопку-гамбургер на мобильных */
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger-icon::before {
+    top: -10px;
+  }
+
+  .hamburger-icon::after {
+    top: 10px;
+  }
+
+  /* Анимация для открытого состояния */
+  .hamburger-menu.active .hamburger-icon {
+    background: transparent;
+  }
+
+  .hamburger-menu.active .hamburger-icon::before {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .hamburger-icon::after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  body {
+    /* background-color: red !important; */
+  }
+
+  .sidebar {
+    width: 100%;
+    position: fixed; /* Фиксируем сайдбар */
+    top: 0;
+    left: 0; /* Позиционируем на 0, но скрываем с помощью transform */
+    transform: translateX(-100%); /* Скрываем сайдбар за пределами экрана */
+    height: 100vh;
+    overflow-y: auto;
+    transition: transform 0.3s ease; /* Изменяем свойство перехода на transform */
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+
+  .sidebar.active {
+    transform: translateX(0); /* Показываем сайдбар */
+  }
+
+  .navigation {
+    padding: var(--spacing-md) 0;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column; /* Элементы списка в колонку */
+    width: 100%;
+  }
+
+  .nav-list li {
+    width: 100%; /* Одна колонка на мобильных */
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+  }
+
+  .nav-link {
+    border-left: 3px solid transparent;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+  }
+
+  .content {
+    padding: var(--spacing-lg); /* Уменьшенный отступ на мобильных */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .nav-list li {
+    width: 98%; /* Одна колонка на очень маленьких экранах */
+  }
+
+  .services-grid,
+  .advantages-grid {
+    grid-template-columns: 1fr; /* Сетка в одну колонку на очень маленьких экранах */
+  }

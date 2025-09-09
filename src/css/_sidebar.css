@@ -1,0 +1,48 @@
+/* ===== САЙДБАР И НАВИГАЦИЯ ===== */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--primary-color);
+  color: white;
+  flex-shrink: 0;
+}
+
+.navigation {
+  padding: var(--spacing-md) 0;
+}
+
+.nav-list,
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li,
+.menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link,
+.menu a {
+  display: block;
+  padding: 0.75rem var(--spacing-md);
+  color: white;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: var(--accent-color);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.nav-link.external::after {
+  content: " ↗";
+  font-size: 0.8em;
+  opacity: 0.7;
+}
