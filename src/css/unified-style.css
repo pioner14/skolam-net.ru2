@@ -71,13 +71,13 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 4vw, 2rem);
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 3.5vw, 1.5rem);
 }
 h4 {
   font-size: 1.25rem;
@@ -92,6 +92,7 @@ h6 {
 p {
   margin-bottom: var(--spacing-md);
   line-height: 1.7;
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 a {
@@ -540,4 +541,8 @@ body.no-scroll {
   .nav-list li {
     width: 98%; /* Одна колонка на очень маленьких экранах */
   }
-}
+
+  .services-grid,
+  .advantages-grid {
+    grid-template-columns: 1fr; /* Сетка в одну колонку на очень маленьких экранах */
+  }
