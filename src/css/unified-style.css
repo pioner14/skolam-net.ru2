@@ -43,6 +43,10 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -54,6 +58,11 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* ===== ТИПОГРАФИКА ===== */
@@ -297,12 +306,12 @@ li {
   position: relative;
   z-index: 2;
   background-image: url(../images/header-bg.webp);
-  background-size: cover;
-  background-position: right center;
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
   background-color: var(--primary-color);
   overflow: hidden;
-  min-height: 213px; /* Высота объединенного изображения */
+  min-height: 400px; /* Увеличена высота для лучшей видимости изображения */
 }
 
 .logo-section {
@@ -330,7 +339,6 @@ li {
 .main-content {
   display: flex;
   flex: 1;
-  min-height: 0;
 }
 
 /* ===== САЙДБАР И НАВИГАЦИЯ ===== */
@@ -475,16 +483,20 @@ li {
     flex-direction: column;
   }
 
+  body {
+    /* background-color: red !important; */
+  }
+
   .sidebar {
     width: 100%;
-    order: 2; /* Перемещаем сайдбар вниз на мобильных */
     position: fixed; /* Фиксируем сайдбар */
     top: 0;
     left: -100%; /* Скрываем сайдбар за пределами экрана */
     height: 100vh;
     overflow-y: auto;
     transition: left 0.3s ease;
-    z-index: 99;
+    z-index: 1000; /* Временно увеличен z-index для отладки */
+    box-sizing: border-box;
   }
 
   .sidebar.active {
