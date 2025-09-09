@@ -297,7 +297,7 @@ li {
   z-index: 2;
   background-image: url(../images/header-bg.webp);
   background-size: cover;
-  background-position: 100% center;
+  background-position: right center;
   background-repeat: no-repeat;
   background-color: var(--primary-color);
   overflow: hidden;
@@ -312,7 +312,7 @@ li {
 
 .logo-section img {
   border-radius: var(--border-radius-small);
-  box-shadow: var(--shadow-light);
+  /* box-shadow: var(--shadow-light); */
 }
 
 .company-name,
@@ -425,6 +425,8 @@ li {
     cursor: pointer;
     z-index: 100;
     padding: 0;
+    outline: none;
+    box-shadow: none;
   }
 
   .hamburger-icon {
