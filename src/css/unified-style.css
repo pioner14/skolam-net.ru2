@@ -297,7 +297,10 @@ li {
   z-index: 2;
   background-image: url(../images/header-bg.webp);
   background-size: cover;
-  background-position: center;
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  overflow: hidden;
   min-height: 213px; /* Высота объединенного изображения */
 }
 
@@ -517,6 +520,10 @@ li {
   .content {
     padding: var(--spacing-md);
   }
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 @media (max-width: 480px) {
