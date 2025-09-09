@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",
       includes: "_includes",
-      output: "_dist"
+      output: "docs"
     },
     // All HTML files will be processed by the Liquid template engine
     htmlTemplateEngine: "liquid"

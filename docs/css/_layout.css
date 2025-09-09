@@ -1,0 +1,37 @@
+/* ===== ОСНОВНАЯ СТРУКТУРА ===== */
+.page-wrapper,
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: var(--bg-light);
+  box-shadow: var(--shadow-medium);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== ОСНОВНОЙ КОНТЕЙНЕР ===== */
+.main-container,
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.content {
+  flex: 1;
+  padding: var(--spacing-xl);
+  background: var(--bg-light) !important;
+  overflow-y: auto;
+}
+
+.content-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.separator {
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  margin: var(--spacing-md) 0 var(--spacing-xl) 0;
+  border-radius: var(--border-radius-small);
+}

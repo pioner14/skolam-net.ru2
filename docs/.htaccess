@@ -1,0 +1,34 @@
+DirectoryIndex index.php index.php3 index.html index.htm index.shtml
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  <FilesMatch "\.(css|js)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+
+  <FilesMatch "\.(pdf|doc|docx|xls|xlsx|ppt|pptx)$">
+    ExpiresDefault "access plus 1 month"
+  </FilesMatch>
+
+  <FilesMatch "\.(html|htm)$">
+    ExpiresDefault "access plus 1 hour"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico|pdf|doc|docx|xls|xlsx|ppt|pptx|html|htm)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} !^443$
+
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
