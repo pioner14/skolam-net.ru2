@@ -2,7 +2,5 @@
 User-agent: *
 Allow: /
 Disallow: /inwidget/
-Disallow: /css/
-Disallow: /images/
 
 Sitemap: https://skolam-net.ru/sitemap.xml

@@ -2,68 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://skolam-net.ru/</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2025-09-09</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/stoimost.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/stoimost.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/kak_nas_nayti.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/kak_nas_nayti.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/zamena-remont.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/zamena-remont.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/Rekomendacii.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/Rekomendacii.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/garantiy.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/garantiy.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/specialist.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/specialist.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/steklo%20s%20obogrevom.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/steklo%20s%20obogrevom.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/remont%20luka.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/remont%20luka.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/grafik%20raboty.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/grafik%20raboty.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/Katalog.html</loc>
-        <lastmod>2024-01-01</lastmod>
-        <priority>0.4</priority>
-    </url>
-    <url>
-        <loc>https://skolam-net.ru/kak_remontiruem.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/kak_remontiruem.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://skolam-net.ru/discussion.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://skolam-net.ru/pages/discussion.html</loc>
+        <lastmod>2025-09-09</lastmod>
         <priority>0.5</priority>
     </url>
-    <!-- Добавить все страницы -->
 </urlset>
