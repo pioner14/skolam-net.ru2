@@ -405,7 +405,7 @@ li {
   .header-content {
     flex-direction: column;
     align-items: flex-start;
-    min-height: auto;
+    min-height: auto; /* Высота будет определяться содержимым */
     padding-bottom: var(--spacing-xl);
   }
 
@@ -520,7 +520,15 @@ li {
   }
 
   .content {
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg); /* Уменьшенный отступ на мобильных */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 }
 
