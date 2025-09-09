@@ -295,7 +295,7 @@ li {
   padding: var(--spacing-md);
   position: relative;
   z-index: 2;
-  background-image: url(../images/header-bg.jpg);
+  background-image: url(../images/header-bg.webp);
   background-size: cover;
   background-position: center;
   min-height: 213px; /* Высота объединенного изображения */
