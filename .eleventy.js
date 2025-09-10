@@ -15,6 +15,6 @@ module.exports = function(eleventyConfig) {
     },
     // All HTML files will be processed by the Liquid template engine
     htmlTemplateEngine: "liquid",
-    pathPrefix: "/skolam-net.ru2/" // Add this line for GitHub Pages deployment
+    pathPrefix: process.env.ELEVENTY_BASE_URL || "/"
   };
 };
