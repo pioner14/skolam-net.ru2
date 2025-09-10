@@ -1,0 +1,48 @@
+/* ===== ХЕДЕР ===== */
+.header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  position: relative;
+  z-index: 2;
+  background-image: url(../images/header-bg.jpg); /* Fallback for older browsers */
+  background-image: url(../images/header-bg.webp); /* Preferred for modern browsers */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  min-height: 400px; /* Увеличена высота для лучшей видимости изображения */
+  width: 100.1%; /* Добавлено для устранения белого пикселя */
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.logo-section img {
+  border-radius: var(--border-radius-small);
+  /* box-shadow: var(--shadow-light); */
+}
+
+.company-name,
+.c_name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
